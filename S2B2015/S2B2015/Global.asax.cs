@@ -6,7 +6,8 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
-
+using System.Data.Entity;
+using S2B2015.Models;
 namespace S2B2015
 {
     public class Global : HttpApplication
@@ -16,6 +17,7 @@ namespace S2B2015
             // Code that runs on application startup
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            Database.SetInitializer(new SampleData());
         }
     }
 }

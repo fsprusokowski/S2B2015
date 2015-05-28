@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace S2B2015.Models
 {
-    class Usuario
+    public class Usuario
     {
 
         public int UsuarioId { get; set; }
