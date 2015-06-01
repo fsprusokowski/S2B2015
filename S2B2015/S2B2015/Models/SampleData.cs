@@ -58,6 +58,7 @@ namespace S2B2015.Models
             var categorias = new List<Categoria>
             {
                 new Categoria { strTitulo = "Eletroeletronico", strDescrição="Produtos " },
+                new Categoria { strTitulo = "Games", strDescrição="Jogos Eletronicos" },
                 
             };
 
