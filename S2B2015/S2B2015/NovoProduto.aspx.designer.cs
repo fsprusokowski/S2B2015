@@ -112,33 +112,6 @@ namespace S2B2015 {
         protected global::System.Web.UI.WebControls.TextBox txtTitulo;
         
         /// <summary>
-        /// lblDescricao control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescricao;
-        
-        /// <summary>
-        /// rfvDescricao control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDescricao;
-        
-        /// <summary>
-        /// txtDescricao control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDescricao;
-        
-        /// <summary>
         /// lblLinkImg control.
         /// </summary>
         /// <remarks>
@@ -184,15 +157,6 @@ namespace S2B2015 {
         protected global::System.Web.UI.WebControls.Button btnImage;
         
         /// <summary>
-        /// Button1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
-        
-        /// <summary>
         /// lblValidade control.
         /// </summary>
         /// <remarks>
@@ -220,15 +184,6 @@ namespace S2B2015 {
         protected global::System.Web.UI.WebControls.TextBox txtValidade;
         
         /// <summary>
-        /// btnSalvar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSalvar;
-        
-        /// <summary>
         /// imgProduto control.
         /// </summary>
         /// <remarks>
@@ -236,5 +191,50 @@ namespace S2B2015 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image imgProduto;
+        
+        /// <summary>
+        /// lblDescricao control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDescricao;
+        
+        /// <summary>
+        /// rfvDescricao control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDescricao;
+        
+        /// <summary>
+        /// txtDescricao control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtDescricao;
+        
+        /// <summary>
+        /// HtmlEditorExtenderDescricao control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.HtmlEditorExtender HtmlEditorExtenderDescricao;
+        
+        /// <summary>
+        /// btnSalvar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSalvar;
     }
 }

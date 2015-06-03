@@ -1,4 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="NovoProduto.aspx.cs" Inherits="S2B2015.WebForm1" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
 
@@ -9,6 +11,8 @@
     <div class="container">
 
         
+        <br />
+        <br />
         <div class="row">
             <div class="col-md-12">
                 <asp:Label CssClass="h1" ID="lblHeader" runat="server" Text="Novo Anúncio"></asp:Label>
@@ -26,6 +30,7 @@
                     <asp:DropDownList id="cboCategorias" class="form-control" runat="server"></asp:DropDownList>
                 </div>
         
+        <br />
                 <div>
                     <asp:Label ID="lblPreco" for="txtPreco" runat="server" Text="Preço:"></asp:Label>
                     <asp:RequiredFieldValidator ID="rfvPreco" runat="server" ControlToValidate="txtPreco" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
@@ -33,17 +38,15 @@
                     <asp:RegularExpressionValidator ID="revPreco" runat="server" ControlToValidate="txtPreco" ErrorMessage="Valor monetário com dois dígitos após o ponto!. Ex: 1.99" ForeColor="Red" ValidationExpression="^\d+(\.\d\d)?$" Display="Dynamic"></asp:RegularExpressionValidator>
                 </div>    
                 
+        <br />
                 <div>
                     <asp:Label ID="lblTitulo" for="txtTitulo" runat="server" Text="Título:"></asp:Label>
                     <asp:RequiredFieldValidator ID="rfvTitulo" runat="server" ControlToValidate="txtTitulo" ErrorMessage="Campo obrigatório!" ForeColor="Red">*</asp:RequiredFieldValidator>
                     <asp:TextBox ID="txtTitulo" class="form-control" runat="server"></asp:TextBox>
                 </div>
                 
-                <div>
-                    <asp:Label ID="lblDescricao" for="txtDescricao" runat="server" Text="Descrição do Produto:"></asp:Label>
-                    <asp:RequiredFieldValidator ID="rfvDescricao" runat="server" ControlToValidate="txtDescricao" ErrorMessage="Campo obrigatório!" ForeColor="Red">*</asp:RequiredFieldValidator>
-                    <asp:TextBox ID="txtDescricao" class="form-control" runat="server"></asp:TextBox>
-                </div>
+                
+        <br />
                 
                 <div class="row">
                     <div class="col-md-8">
@@ -59,17 +62,15 @@
                         
                     </div>
                 </div>
-
+                
+        <br />
                 <div >
                     <asp:Label ID="lblValidade" runat="server" Text="Validade:"></asp:Label>
                     <asp:RequiredFieldValidator ID="rfvValidade" runat="server" ControlToValidate="txtValidade" ErrorMessage="Campo obrigatório!" ForeColor="Red">*</asp:RequiredFieldValidator>
                     <asp:TextBox ID="txtValidade" class="form-control" runat="server"></asp:TextBox>
                 </div>
                 
-                <br />
-                <div>
-                    <asp:Button ID="btnSalvar" class="btn-lg btn-primary" runat="server" Text="Finalizar" OnClick="btnSalvar_Click" />
-                </div>
+                
 
             </div>
 
@@ -79,11 +80,38 @@
                 </div>
                 
             </div>
+        
+        </div>
+        
+        
+        <br />
+        
+        <br />
+        
+        <br />
+
+        <div class="row">
+        
+            <div class="col-md-12">
+                <asp:Label ID="lblDescricao" for="txtDescricao" runat="server" Text="Descrição do Produto:"></asp:Label>                  
+                <asp:RequiredFieldValidator ID="rfvDescricao" runat="server" ControlToValidate="txtDescricao" ErrorMessage="Campo obrigatório!" ForeColor="Red">*</asp:RequiredFieldValidator>
+                <asp:TextBox ID="txtDescricao" class="form-control" runat="server" Height="500px" Width="80%" ></asp:TextBox>
 
             
+                <cc1:HtmlEditorExtender TargetControlID="txtDescricao"  ID="HtmlEditorExtenderDescricao" runat="server"></cc1:HtmlEditorExtender>
+            </div>
         
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col-md-12">
+                <asp:Button ID="btnSalvar" class="btn-lg btn-primary" Width="80%" runat="server" Text="Finalizar" OnClick="btnSalvar_Click" />
+            </div>
         </div>
         
     </div>
 
+    
 </asp:Content>

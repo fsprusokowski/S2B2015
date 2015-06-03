@@ -49,4 +49,9 @@ C:\Users\Patrick\Documents\GitHub\S2BPUCRS\S2B2015\S2B2015\bin\Microsoft.Owin.Se
 C:\Users\Patrick\Documents\GitHub\S2BPUCRS\S2B2015\S2B2015\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\Patrick\Documents\GitHub\S2BPUCRS\S2B2015\S2B2015\obj\Debug\S2B2015.dll
 C:\Users\Patrick\Documents\GitHub\S2BPUCRS\S2B2015\S2B2015\obj\Debug\S2B2015.pdb
+C:\Users\Patrick\Documents\GitHub\S2BPUCRS\S2B2015\S2B2015\bin\AjaxControlToolkit.dll
+C:\Users\Patrick\Documents\GitHub\S2BPUCRS\S2B2015\S2B2015\bin\AjaxControlToolkit.HtmlEditor.Sanitizer.dll
+C:\Users\Patrick\Documents\GitHub\S2BPUCRS\S2B2015\S2B2015\bin\HtmlAgilityPack.dll
+C:\Users\Patrick\Documents\GitHub\S2BPUCRS\S2B2015\S2B2015\bin\HtmlAgilityPack.pdb
+C:\Users\Patrick\Documents\GitHub\S2BPUCRS\S2B2015\S2B2015\bin\HtmlAgilityPack.xml
 C:\Users\Patrick\Documents\GitHub\S2BPUCRS\S2B2015\S2B2015\obj\Debug\S2B2015.csprojResolveAssemblyReference.cache
