@@ -1,4 +1,5 @@
-﻿using System;
+﻿using S2B2015.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,9 +17,13 @@ namespace S2B2015
 
         protected void btnPesquisar_Click(object sender, EventArgs e)
         {
+            StoreEntities db = new StoreEntities();
+
             if (rdioPesquisa.SelectedItem.Text == "Nome do Produto")
             {
-                Response.Redirect("default");
+                var query = from p in db.Produtos
+                            where p.strTitulo.Contains(TxtPesquisa.Text)
+                            select p;     
             }
             else
             {
@@ -28,7 +33,12 @@ namespace S2B2015
 
         protected void drplstCategoria_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            StoreEntities db = new StoreEntities();
+            var query = from p in db.Produtos
+                        where p.CategoriaId == (from c in db.Categorias 
+                                                where c.strTitulo.Equals(drplstCategoria.Text) 
+                                                select c.CategoriaId).First()
+                        select p;
         }
     }
 }

@@ -5,7 +5,7 @@
     <h2><%: Title %></h2>
     <h3>Pesquise o Produto Desejado</h3>
     <p>
-        <asp:TextBox ID="TextBox1" runat="server" Height="29px" Width="228px"></asp:TextBox>
+        <asp:TextBox ID="TxtPesquisa" runat="server" Height="29px" Width="228px"></asp:TextBox>
         <asp:Button ID="btnPesquisar" runat="server" OnClick="btnPesquisar_Click" Text="Pesquisar" />
         <asp:RadioButtonList ID="rdioPesquisa" runat="server" RepeatDirection="Horizontal">
             <asp:ListItem Selected="True">Nome do Produto</asp:ListItem>
